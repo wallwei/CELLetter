@@ -37,7 +37,7 @@ The workflow consists of four main components:
 
 2. Residue Feature Processor​​: Mixture of Experts with 1D convolutional networks
 
-​​3. Fusion Gate​​: Adaptive weighting between global and local features
+3. Fusion Gate​​: Adaptive weighting between global and local features
 
 ​​4. Classifier​​: Multi-layer perceptron for final prediction
 
