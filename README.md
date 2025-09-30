@@ -39,7 +39,7 @@ The workflow consists of four main components:
 
 3. Fusion Gate​​: Adaptive weighting between global and local features
 
-​​4. Classifier​​: Multi-layer perceptron for final prediction
+4. Classifier​​: Multi-layer perceptron for final prediction
 
 ## Features
 Dual Feature Extraction​​: Combines global protein features with residue-level local features
