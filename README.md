@@ -2,13 +2,13 @@
 CELLetter is a deep learning framework for predicting cell-cell communication (CCC) by identifying ligand-receptor interactions (LRI) from protein sequence and expression data. The system combines global and residue-level features using a Mixture of Experts (MoE) architecture to achieve high-precision LRI prediction and cell communication scoring.
 
 ## Overveiw of CELLetter
-<img src="https://github.com/wallwei/CELLetter/blob/8864e6b2bc4d06c1bb56eeef199a2d95ec77c31c/Fig1.pdf" width = 50%>
+<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig1_01.png" width = 50%>
 
 ## Workflow of L-R prediction
-<img src="https://github.com/wallwei/CELLetter/blob/8864e6b2bc4d06c1bb56eeef199a2d95ec77c31c/Fig2.pdf" width = 50%>
+<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig2_01.png" width = 50%>
 
 ## Pipeline of CCC inference
-<img src="https://github.com/wallwei/CELLetter/blob/8864e6b2bc4d06c1bb56eeef199a2d95ec77c31c/Fig3.pdf" width = 50%>
+<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig3_01.png" width = 50%>
 
 ## Model Architecture
 1.​​ Global Feature Processor​​: MLP with residual connections
