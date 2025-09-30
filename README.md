@@ -14,7 +14,7 @@ CELLetter is a deep learning framework for predicting cell-cell communication (C
 1.​​ Global Feature Processor​​: MLP with residual connections
 
 2. Residue Feature Processor​​: Mixture of Experts with 1D convolutional networks
-3. 
+
 ​​3. Fusion Gate​​: Adaptive weighting between global and local features
 
 ​​4. Classifier​​: Multi-layer perceptron for final prediction
