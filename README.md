@@ -7,8 +7,6 @@ CELLetter is a deep learning framework for predicting cell-cell communication by
 ​​3. Fusion Gate​​: Adaptive weighting between global and local features
 ​​4. Classifier​​: Multi-layer perceptron for final prediction
 
-
-
 ## Features
 Dual Feature Extraction​​: Combines global protein features with residue-level local features
 ​​Advanced Architecture​​: Utilizes Mixture of Experts (MoE) with gating mechanisms
@@ -27,12 +25,12 @@ CUDA-capable GPU (recommended)
     --output datasets/global_features/
 ```
 ### 2. Model Training
-'''python
+```python
     --data_dir datasets/global_features/ \
     --residue_dir datasets/residue_features/ \
     --matrix_path datasets/interaction_matrix.csv \
     --output_dir results/training/
-'''
+```
 ### 3. Prediction
 ```python
     --model_path results/training/best_model.pth \
