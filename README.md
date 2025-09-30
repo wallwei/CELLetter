@@ -26,9 +26,17 @@ Dual Feature Extraction​​: Combines global protein features with residue-lev
 
 ## Installation
 ### Prerequisites
-Python 3.8+
-PyTorch 2.0+
-CUDA-capable GPU (recommended)
+*Python==3.9
+
+*numpy==1.24.2
+
+*pandas==2.0.1
+
+*torch==2.4.1
+
+*pySCENIC==0.12.0
+
+*CUDA-capable GPU (recommended)
 
 ## Usage Pipeline
 ### 1. Feature Extraction
@@ -63,6 +71,8 @@ python code/CCC_score/compute_communication.py \
 ```
 
 ## Outputs
---predictions.csv: Predicted ligand-receptor pairs
---communication_matrix.csv: Cell-type communication strength matrix
---top3_ligand_receptor_pairs.csv: Top contributing LRIs
+*predictions.csv: Predicted ligand-receptor pairs
+
+*communication_matrix.csv: Cell-type communication strength matrix
+
+*top3_ligand_receptor_pairs.csv: Top contributing LRIs
