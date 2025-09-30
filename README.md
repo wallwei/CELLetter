@@ -2,14 +2,14 @@
 CELLetter is a deep learning framework for predicting cell-cell communication (CCC) by identifying ligand-receptor interactions (LRI) from protein sequence and expression data. The system combines global and residue-level features using a Mixture of Experts (MoE) architecture to achieve high-precision LRI prediction and cell communication scoring.
 
 ## Overveiw of CELLetter
-<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig1_01.png" width = 50%>
+<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig1_01.png" width = 80%>
 
 (A) Interacting L-R prediction. Protein sequences of ligands and receptors are encoded using ProstT5 to learn their initial embeddings. These embeddings are then processed through a novel feature learning model composed of a dual-stream architecture, a gated mechanism, and an interaction strategy. The learned features are taken as inputs of an MLP to find potential interacting L-R pairs. 
 
 (B) CCC inference. The experimentally validated and predicted interactions are merged and filtered to construct a comprehensive set based on their scRNA-seq data. Next, TF activities are estimated using pySCENIC. And cellular crosstalk is scored based on L-R geometric mean expression across cell types with weight of the global TF activity. Finally, the constructed CCC network is visualized to reveal cellular signaling patterns.
 
 ## Workflow of L-R prediction
-<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig2_01.png" width = 50%>
+<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig2_01.png" width = 80%>
 
 (1) Feature embedding. The protein sequences of ligands and receptors are encoded using ProstT5 to generate both global features (sequence-level) and local features (residue-level). 
 
@@ -22,7 +22,7 @@ CELLetter is a deep learning framework for predicting cell-cell communication (C
 (5) Classification. Both context-aware and interaction-aware representation are concatenated and fed into an MLP classifier to predict the interaction probability
 
 ## Pipeline of CCC inference
-<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig3_01.png" width = 50%>
+<img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig3_01.png" width = 80%>
 
 The workflow consists of four main components: 
 
