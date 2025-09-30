@@ -3,12 +3,14 @@ CELLetter is a deep learning framework for predicting cell-cell communication (C
 
 ## Overveiw of CELLetter
 <img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig1_01.png" width = 50%>
+
 (A) Interacting L-R prediction. Protein sequences of ligands and receptors are encoded using ProstT5 to learn their initial embeddings. These embeddings are then processed through a novel feature learning model composed of a dual-stream architecture, a gated mechanism, and an interaction strategy. The learned features are taken as inputs of an MLP to find potential interacting L-R pairs. 
 
 (B) CCC inference. The experimentally validated and predicted interactions are merged and filtered to construct a comprehensive set based on their scRNA-seq data. Next, TF activities are estimated using pySCENIC. And cellular crosstalk is scored based on L-R geometric mean expression across cell types with weight of the global TF activity. Finally, the constructed CCC network is visualized to reveal cellular signaling patterns.
 
 ## Workflow of L-R prediction
 <img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig2_01.png" width = 50%>
+
 (1) Feature embedding. The protein sequences of ligands and receptors are encoded using ProstT5 to generate both global features (sequence-level) and local features (residue-level). 
 
 (2) Feature extraction and dimensionality reduction. The global features are extracted and reduced by comnbining an MLP with residual connections, while the residue-level features are refined to capture diverse local sequence patterns by a CNN-MoE module comprising multiple 1D-CNN experts with dilated convolutions. 
@@ -21,6 +23,7 @@ CELLetter is a deep learning framework for predicting cell-cell communication (C
 
 ## Pipeline of CCC inference
 <img src="https://github.com/wallwei/CELLetter/blob/3901030074cb7c371f972693ad826f715afa2880/Fig3_01.png" width = 50%>
+
 The workflow consists of four main components: 
 
 (1) L-R Filtering. The experimentally validated and predicted interacting L-R pairs are merged and filtered using scRNA-seq data. 
