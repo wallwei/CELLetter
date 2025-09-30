@@ -32,15 +32,6 @@ The workflow consists of four main components:
 
 (3) CCC scoring. Cellular communication strength is assessed by integrating L-R expression with global TF activity; (4) CCC visualization: The inferred CCC is visualized to highlight key communication pathways using heatmap, bubble plot, stacked bar chart and circos plot.
 
-## Model Architecture
-1.​​ Global Feature Processor​​: MLP with residual connections
-
-2. Residue Feature Processor​​: Mixture of Experts with 1D convolutional networks
-
-3. Fusion Gate​​: Adaptive weighting between global and local features
-
-4. Classifier​​: Multi-layer perceptron for final prediction
-
 ## Features
 Dual Feature Extraction​​: Combines global protein features with residue-level local features
 
